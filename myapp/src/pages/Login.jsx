@@ -1,13 +1,61 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import {
+  useCreateUserWithEmailAndPassword,
+  useSignInWithEmailAndPassword,
+  useAuthState,
+} from "react-firebase-hooks/auth";
+import { signOut } from "firebase/auth";
+import { auth } from "../../lib/config";
+
 
 const Login = () => {
   const navigate = useNavigate();
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // TODO: Add authentication logic here
-    navigate('/'); // Redirect to home after login (customize as needed)
-  };
+
+  const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
+
+  const [createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(auth);
+  const [signInWithEmailAndPassword]  = useSignInWithEmailAndPassword(auth);
+  const [user,loading] = useAuthState(auth);
+
+  React.useEffect(() =>{
+      if(user){
+        signOut(auth);
+      }
+  },[loading,user])
+
+  const handleSignUp = async () => {
+    try {
+      const res = await createUserWithEmailAndPassword(email, password);
+      setEmail('');
+      setPassword('');
+      console.log({res});
+    } catch (error) {
+      console.error('Error signing up:', error);
+      // Handle error (e.g., show error message)
+    }
+  }
+
+  const handleLogin = async() => {
+    try {
+      const res = await signInWithEmailAndPassword(email, password);
+      setEmail('');
+      setPassword('');
+      console.log({res});
+      if(res?.user){
+        navigate('/afterlogin'); // Redirect to home page after successful login
+      }
+      else{
+        window.alert('Login failed, please try again');
+      }
+    } catch (error) {
+      console.error('Error logging in:', error);
+    }
+
+  }
+
+  
   return (
     <section>
   <div
@@ -31,6 +79,8 @@ const Login = () => {
               <input
                 placeholder="Email"
                 type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
                 className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
               />
             </div>
@@ -50,18 +100,21 @@ const Login = () => {
             </div>
             <div className="mt-2">
               <input
-                placeholder="Password"
-                type="password"
-                className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-              />
+                  placeholder="Password"
+                  type="password"
+                  value={password}
+                  onChange={e => setPassword(e.target.value)}
+                  className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                />
             </div>
           </div>
           <div>
             <button
               className="inline-flex w-full items-center justify-center rounded-md bg-black px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/80"
               type="button"
+              onClick={handleLogin}
             >
-              Get started
+              Login
             </button>
           </div>
         </div>
@@ -70,6 +123,7 @@ const Login = () => {
         <button
           className="relative inline-flex w-full items-center justify-center rounded-md border border-gray-400 bg-white px-3.5 py-2.5 font-semibold text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black focus:outline-none"
           type="button"
+          onClick={handleSignUp}
         >
           <span className="mr-2 inline-block">
             <svg
@@ -83,7 +137,7 @@ const Login = () => {
               ></path>
             </svg>
           </span>
-          Sign in with Google
+          Sign Up
         </button>
       </div>
     </div>

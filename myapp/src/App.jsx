@@ -8,6 +8,7 @@ import Landing from './pages/Landing';
 import FishDetail from './Buy/FishDetail';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Afterlogin from './pages/Afterlogin';
 import './index.css'; 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Route path="/proe" element={<Profile />} />
       <Route path="/visit" element={<Lee/>} />
       <Route path="/fish/:name" element={<FishDetail />} />
+      <Route path ="/afterlogin" element={<Afterlogin />} />
 
   <Route path="/login" element={<Login/>} />
   <Route path="/register" element={<Register/>} />
