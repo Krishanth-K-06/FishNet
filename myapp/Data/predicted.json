@@ -1,0 +1,52 @@
+{
+    "Tuna": [
+        {
+            "latitude": 8.58,
+            "longitude": 78.93
+        },
+        {
+            "latitude": 8.58,
+            "longitude": 78.93
+        }
+    ],
+    "Salmon": [
+        {
+            "latitude": 8.58,
+            "longitude": 78.93
+        },
+        {
+            "latitude": 8.58,
+            "longitude": 78.93
+        }
+    ],
+    "Mackerel": [
+        {
+            "latitude": 8.58,
+            "longitude": 78.93
+        },
+        {
+            "latitude": 8.58,
+            "longitude": 78.93
+        }
+    ],
+    "Sardine": [
+        {
+            "latitude": 8.58,
+            "longitude": 78.93
+        },
+        {
+            "latitude": 8.58,
+            "longitude": 78.93
+        }
+    ],
+    "Pomfret": [
+        {
+            "latitude": 8.58,
+            "longitude": 78.93
+        },
+        {
+            "latitude": 8.58,
+            "longitude": 78.93
+        }
+    ]
+}

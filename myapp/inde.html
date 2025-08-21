@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Location (Laptop Wi-Fi)</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    #status { font-size: 18px; }
+    #warning { color: red; font-weight: bold; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>📍 Live Location Tracker (Laptop Wi-Fi)</h2>
+  <p id="status">Getting location...</p>
+  <p id="warning"></p>
+
+  <script>
+    function updateLocation(position) {
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+      const accuracy = position.coords.accuracy;
+
+      // Display coordinates
+      document.getElementById("status").innerHTML = `
+        Latitude: ${lat.toFixed(6)}<br>
+        Longitude: ${lon.toFixed(6)}<br>
+        Accuracy: ${accuracy.toFixed(1)} meters
+      `;
+
+      // Show warning if accuracy is poor
+      if (accuracy > 100) {
+        document.getElementById("warning").innerHTML = 
+          "⚠️ Location may be inaccurate (Wi-Fi based, weak signal)";
+      } else {
+        document.getElementById("warning").innerHTML = "";
+      }
+    }
+
+    function showError(error) {
+      document.getElementById("status").innerHTML = "❌ Error: " + error.message;
+    }
+
+    if (navigator.geolocation) {
+      navigator.geolocation.watchPosition(updateLocation, showError, {
+        enableHighAccuracy: true,
+        maximumAge: 0,
+        timeout: 10000
+      });
+    } else {
+      document.getElementById("status").innerHTML = 
+        "❌ Geolocation is not supported by this device.";
+    }
+  </script>
+</body>
+</html>

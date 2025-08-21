@@ -1,0 +1,313 @@
+{
+  "Tuna": [
+      {
+        "latitude": 13.08,
+        "longitude": 80.28,
+        "temperature": 26.5,
+        "timestamp": "2025-07-05T06:00:00"
+      },
+      {
+        "latitude": 12.58,
+        "longitude": 80.13,
+        "temperature": 26.4,
+        "timestamp": "2025-07-08T06:00:00"
+      },
+      {
+        "latitude": 12.08,
+        "longitude": 79.98,
+        "temperature": 26.7,
+        "timestamp": "2025-07-11T06:00:00"
+      },
+      {
+        "latitude": 11.58,
+        "longitude": 79.83,
+        "temperature": 26.5,
+        "timestamp": "2025-07-14T06:00:00"
+      },
+      {
+        "latitude": 11.08,
+        "longitude": 79.68,
+        "temperature": 26.6,
+        "timestamp": "2025-07-17T06:00:00"
+      },
+      {
+        "latitude": 10.58,
+        "longitude": 79.53,
+        "temperature": 26.3,
+        "timestamp": "2025-07-20T06:00:00"
+      },
+      {
+        "latitude": 10.08,
+        "longitude": 79.38,
+        "temperature": 26.5,
+        "timestamp": "2025-07-23T06:00:00"
+      },
+      {
+        "latitude": 9.58,
+        "longitude": 79.23,
+        "temperature": 26.4,
+        "timestamp": "2025-07-26T06:00:00"
+      },
+      {
+        "latitude": 9.08,
+        "longitude": 79.08,
+        "temperature": 26.7,
+        "timestamp": "2025-07-29T06:00:00"
+      },
+      {
+        "latitude": 8.58,
+        "longitude": 78.93,
+        "temperature": 26.5,
+        "timestamp": "2025-07-30T06:00:00"
+      } 
+    ]
+    ,
+  "Salmon":[
+      {
+        "latitude": 13.08,
+        "longitude": 80.28,
+        "temperature": 26.5,
+        "timestamp": "2025-07-05T06:00:00"
+      },
+      {
+        "latitude": 12.58,
+        "longitude": 80.13,
+        "temperature": 26.4,
+        "timestamp": "2025-07-08T06:00:00"
+      },
+      {
+        "latitude": 12.08,
+        "longitude": 79.98,
+        "temperature": 26.7,
+        "timestamp": "2025-07-11T06:00:00"
+      },
+      {
+        "latitude": 11.58,
+        "longitude": 79.83,
+        "temperature": 26.5,
+        "timestamp": "2025-07-14T06:00:00"
+      },
+      {
+        "latitude": 11.08,
+        "longitude": 79.68,
+        "temperature": 26.6,
+        "timestamp": "2025-07-17T06:00:00"
+      },
+      {
+        "latitude": 10.58,
+        "longitude": 79.53,
+        "temperature": 26.3,
+        "timestamp": "2025-07-20T06:00:00"
+      },
+      {
+        "latitude": 10.08,
+        "longitude": 79.38,
+        "temperature": 26.5,
+        "timestamp": "2025-07-23T06:00:00"
+      },
+      {
+        "latitude": 9.58,
+        "longitude": 79.23,
+        "temperature": 26.4,
+        "timestamp": "2025-07-26T06:00:00"
+      },
+      {
+        "latitude": 9.08,
+        "longitude": 79.08,
+        "temperature": 26.7,
+        "timestamp": "2025-07-29T06:00:00"
+      },
+      {
+        "latitude": 8.58,
+        "longitude": 78.93,
+        "temperature": 26.5,
+        "timestamp": "2025-07-30T06:00:00"
+      }
+    ],
+  "Mackerel":  [
+      {
+        "latitude": 13.08,
+        "longitude": 80.28,
+        "temperature": 26.5,
+        "timestamp": "2025-07-05T06:00:00"
+      },
+      {
+        "latitude": 12.58,
+        "longitude": 80.13,
+        "temperature": 26.4,
+        "timestamp": "2025-07-08T06:00:00"
+      },
+      {
+        "latitude": 12.08,
+        "longitude": 79.98,
+        "temperature": 26.7,
+        "timestamp": "2025-07-11T06:00:00"
+      },
+      {
+        "latitude": 11.58,
+        "longitude": 79.83,
+        "temperature": 26.5,
+        "timestamp": "2025-07-14T06:00:00"
+      },
+      {
+        "latitude": 11.08,
+        "longitude": 79.68,
+        "temperature": 26.6,
+        "timestamp": "2025-07-17T06:00:00"
+      },
+      {
+        "latitude": 10.58,
+        "longitude": 79.53,
+        "temperature": 26.3,
+        "timestamp": "2025-07-20T06:00:00"
+      },
+      {
+        "latitude": 10.08,
+        "longitude": 79.38,
+        "temperature": 26.5,
+        "timestamp": "2025-07-23T06:00:00"
+      },
+      {
+        "latitude": 9.58,
+        "longitude": 79.23,
+        "temperature": 26.4,
+        "timestamp": "2025-07-26T06:00:00"
+      },
+      {
+        "latitude": 9.08,
+        "longitude": 79.08,
+        "temperature": 26.7,
+        "timestamp": "2025-07-29T06:00:00"
+      },
+      {
+        "latitude": 8.58,
+        "longitude": 78.93,
+        "temperature": 26.5,
+        "timestamp": "2025-07-30T06:00:00"
+      }
+    ],
+  "Sardine":  [
+      {
+        "latitude": 13.08,
+        "longitude": 80.28,
+        "temperature": 26.5,
+        "timestamp": "2025-07-05T06:00:00"
+      },
+      {
+        "latitude": 12.58,
+        "longitude": 80.13,
+        "temperature": 26.4,
+        "timestamp": "2025-07-08T06:00:00"
+      },
+      {
+        "latitude": 12.08,
+        "longitude": 79.98,
+        "temperature": 26.7,
+        "timestamp": "2025-07-11T06:00:00"
+      },
+      {
+        "latitude": 11.58,
+        "longitude": 79.83,
+        "temperature": 26.5,
+        "timestamp": "2025-07-14T06:00:00"
+      },
+      {
+        "latitude": 11.08,
+        "longitude": 79.68,
+        "temperature": 26.6,
+        "timestamp": "2025-07-17T06:00:00"
+      },
+      {
+        "latitude": 10.58,
+        "longitude": 79.53,
+        "temperature": 26.3,
+        "timestamp": "2025-07-20T06:00:00"
+      },
+      {
+        "latitude": 10.08,
+        "longitude": 79.38,
+        "temperature": 26.5,
+        "timestamp": "2025-07-23T06:00:00"
+      },
+      {
+        "latitude": 9.58,
+        "longitude": 79.23,
+        "temperature": 26.4,
+        "timestamp": "2025-07-26T06:00:00"
+      },
+      {
+        "latitude": 9.08,
+        "longitude": 79.08,
+        "temperature": 26.7,
+        "timestamp": "2025-07-29T06:00:00"
+      },
+      {
+        "latitude": 8.58,
+        "longitude": 78.93,
+        "temperature": 26.5,
+        "timestamp": "2025-07-31T06:00:00"
+      }
+    ],
+  "Pomfret":  [
+      {
+        "latitude": 13.08,
+        "longitude": 80.28,
+        "temperature": 26.5,
+        "timestamp": "2025-07-05T06:00:00"
+      },
+      {
+        "latitude": 12.58,
+        "longitude": 80.13,
+        "temperature": 26.4,
+        "timestamp": "2025-07-08T06:00:00"
+      },
+      {
+        "latitude": 12.08,
+        "longitude": 79.98,
+        "temperature": 26.7,
+        "timestamp": "2025-07-11T06:00:00"
+      },
+      {
+        "latitude": 11.58,
+        "longitude": 79.83,
+        "temperature": 26.5,
+        "timestamp": "2025-07-14T06:00:00"
+      },
+      {
+        "latitude": 11.08,
+        "longitude": 79.68,
+        "temperature": 26.6,
+        "timestamp": "2025-07-17T06:00:00"
+      },
+      {
+        "latitude": 10.58,
+        "longitude": 79.53,
+        "temperature": 26.3,
+        "timestamp": "2025-07-20T06:00:00"
+      },
+      {
+        "latitude": 10.08,
+        "longitude": 79.38,
+        "temperature": 26.5,
+        "timestamp": "2025-07-23T06:00:00"
+      },
+      {
+        "latitude": 9.58,
+        "longitude": 79.23,
+        "temperature": 26.4,
+        "timestamp": "2025-07-26T06:00:00"
+      },
+      {
+        "latitude": 9.08,
+        "longitude": 79.08,
+        "temperature": 26.7,
+        "timestamp": "2025-07-29T06:00:00"
+      },
+      {
+        "latitude": 8.58,
+        "longitude": 78.93,
+        "temperature": 26.5,
+        "timestamp": "2025-07-31T06:00:00"
+      }
+    ]
+}
